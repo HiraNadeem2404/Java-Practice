@@ -5,8 +5,10 @@ public class AccountUse {
         Account testAccount= new Account(1122, 20000, 4.5);
         testAccount.displayInfo();
         testAccount.withdraw(2500);
-        System.out.println("Balance= " + testAccount.getBalance());
+        System.out.println("Balance: " + testAccount.getBalance());
         testAccount.deposit(3000);
-        System.out.println("Balance= " + testAccount.getBalance());
+        System.out.println("Balance: " + testAccount.getBalance());
+        testAccount.withdraw(1500);
+        System.out.println("Balance: " + testAccount.getBalance());
     }
 }
